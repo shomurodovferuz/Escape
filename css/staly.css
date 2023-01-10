@@ -11,10 +11,42 @@ a{
 img{
     width: 100%;
 }
+header{
+    background-image: url("../img/IMAGE\ \(62\).png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 body{
     font-family: sans-serif;
 }
 .container{
     width: 1140px;
     margin: 0 auto;
+}
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_item a{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 15px;
+    transition: .6s;
+}
+.nav_item a:hover{
+    transform: scale(1.2);
+    color: rgb(231, 206, 176);
+    box-shadow: 0 0 20px 3px;
+
+}
+.nav_photo{
+    width: 70px;
+    margin-right: 300px;
 }
