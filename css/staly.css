@@ -1,52 +1,257 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
 }
-a{
+
+a {
     display: inline-block;
     text-decoration: none;
 }
-img{
+
+img {
     width: 100%;
 }
-header{
+
+header {
     background-image: url("../img/IMAGE\ \(62\).png");
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 20px;
+    padding-bottom: 100px;
 }
-body{
+
+body {
     font-family: sans-serif;
 }
-.container{
+
+.container {
     width: 1140px;
     margin: 0 auto;
 }
-.navbar .container{
+
+.navbar .container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nav_list{
+
+.nav_list {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nav_item a{
+
+.nav_item a {
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 100;
-    margin-left: 15px;
+    margin-left: 15px; 
     transition: .6s;
 }
-.nav_item a:hover{
+
+.nav_item a:hover {
     transform: scale(1.2);
     color: rgb(231, 206, 176);
     box-shadow: 0 0 20px 3px;
 
 }
-.nav_photo{
+
+.nav_photo {
     width: 70px;
-    margin-right: 300px;
+    /* margin-right: 300px; */
+}
+
+main h2 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 51px;
+    color: #FFFFFF;
+    margin-top: 70px;
+    text-align: center;
+}
+
+main p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.63);
+
+}
+
+.main_link{
+    margin: 25px auto;
+    text-align: center;
+}
+main a {
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: #DD783F;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .6s;
+}
+main a:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 3px burlywood;
+}
+@media(max-width: 1160px){
+    .container{
+        width: 1040px;
+    }
+}
+
+@media(max-width: 1060px){
+    .container{
+        width: 940px;
+    }
+    .main_title{
+        font-size: 40px;
+    }
+    .main_text{
+        font-size: 13px;
+    }
+    .main_link a{
+        font-size: 10px;
+        font-weight: 350;
+    }
+}
+
+@media(max-width: 960px){
+    .container{
+        width: 840px;
+    }
+    .main_title{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .main_text{
+        font-size: 10px;
+    }
+    .main_link a{
+        font-size: 7px;
+        font-weight: 330;
+        padding: 7px 15px;
+    }
+    .nav_item a{
+        font-size: 10px;
+    }
+    .nav_photo{
+        width: 50px;
+    }
+
+}
+
+@media(max-width: 860px){
+    .container{
+        width: 740px;
+    }
+    .main_title{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .main_text{
+        font-size: 8px;
+        margin-top: 20px;
+    }
+    .main_link a{
+        font-size: 5px;
+        font-weight: 320;
+        padding: 6px 13px;
+    }
+    .nav_item a{
+        font-size: 8px;
+    }
+    .nav_photo{
+        width: 45px;
+        margin-right: 200px;
+    }
+    .nav_list{
+        display: none;
+    }
+
+}
+
+
+
+@media(max-width: 760px){
+    .container{
+        width: 640px;
+    }
+    .main_title{
+        font-size: 25px;
+        
+    }
+    .main_text{
+        font-size: 8px;
+        margin-top: 2px;
+}
+}
+
+
+@media(max-width: 660px){
+    .container{
+        width: 540px;
+    }
+}
+
+
+
+@media(max-width: 560px){
+    .container{
+        width: 440px;
+    }
+}
+
+
+@media(max-width: 460px){
+    .container{
+        width: 340px;
+    }
+    .main_title{
+        line-height: 10px;
+        font-size: 10px;
+        bottom: 1px;
+    }
+    .main_text{
+        line-height: 1px;
+        font-size: 4px;
+    }
+    .main_link a{
+        font-size: 3px;
+        font-weight: 100;
+        line-height: 10px;
+        
+    }
+    .nav_item a{
+        font-size: 5px;
+        line-height: 1px;
+    }
+    main a{
+        line-height: 1px;
+        margin-top: -20px;
+        padding: 1px;
+    }
+    .nav_photo{
+        width: 30px;
+    }
+    .nav_list{
+        display: none;
+    }
+
+}
+
+@media(max-width: 300px){
+    .container{
+        width: 100%;
+    }
+    main a{
+        line-height: 1px;
+        margin-top: -20px;
+        padding: 1px;
+    }
 }
